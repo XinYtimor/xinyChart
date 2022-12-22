@@ -1,0 +1,78 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+		{
+			"path": "pages/msg/msg",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/list/list",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}
+
+	],
+	"subPackages": [{
+		"root": "subpages",
+		"pages": [{
+			"path": "dialogue/dialogue",
+			"style": {}
+		}, {
+			"path": "details/details",
+			"style": {}
+		}]
+	}],
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#1296db",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/msg/msg",
+				"iconPath": "static/tabbar/default/msg.png",
+				"selectedIconPath": "static/tabbar/active/msg.png",
+				"text": "消息"
+			}, {
+				"pagePath": "pages/list/list",
+				"iconPath": "static/tabbar/default/list.png",
+				"selectedIconPath": "static/tabbar/active/list.png",
+				"text": "通讯录"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/tabbar/default/mine.png",
+				"selectedIconPath": "static/tabbar/active/mine.png",
+				"text": "我的"
+			}
+		]
+	},
+	"uniIdRouter": {},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

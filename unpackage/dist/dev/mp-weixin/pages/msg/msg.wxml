@@ -1,0 +1,1 @@
+<view><text>msg</text><button bindtap="{{a}}">toDia</button></view>
